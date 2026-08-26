@@ -1,0 +1,16 @@
+{
+  "name": "tatimblin-skills",
+  "description": "Skills by Tristan Timblin",
+  "owner": {
+    "name": "Tristan Timblin",
+    "url": "https://github.com/tatimblin"
+  },
+  "plugins": [
+    {
+      "name": "eero-sonos",
+      "source": "./",
+      "category": "networking",
+      "tags": ["sonos", "eero", "networking", "diagnostics"]
+    }
+  ]
+}

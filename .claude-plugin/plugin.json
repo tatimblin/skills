@@ -1,0 +1,13 @@
+{
+  "name": "eero-sonos",
+  "description": "Diagnose and fix Sonos speakers misbehaving on an eero mesh network. Measures the live system over Sonos' local port-1400 API and the eero cloud API, reports which settings violate each vendor's published guidance, and offers reversible fixes.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Tristan Timblin",
+    "url": "https://github.com/tatimblin"
+  },
+  "homepage": "https://github.com/tatimblin/skills/tree/main/skills/eero-sonos",
+  "repository": "https://github.com/tatimblin/skills",
+  "license": "MIT",
+  "keywords": ["sonos", "eero", "networking", "wifi", "mesh", "diagnostics", "sonosnet"]
+}
