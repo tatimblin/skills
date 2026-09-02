@@ -8,9 +8,15 @@
   "plugins": [
     {
       "name": "eero-sonos",
-      "source": "./",
+      "source": "./skills/eero-sonos",
       "category": "networking",
       "tags": ["sonos", "eero", "networking", "diagnostics"]
+    },
+    {
+      "name": "volo-sports",
+      "source": "./skills/volo-sports",
+      "category": "productivity",
+      "tags": ["volo", "sports", "schedule", "graphql", "calendar"]
     }
   ]
 }

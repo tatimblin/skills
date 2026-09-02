@@ -1,0 +1,13 @@
+{
+  "name": "volo-sports",
+  "description": "Read a Volo Sports account's leagues, schedules and results through Volo's undocumented Hasura GraphQL API. Handles the login credential, refreshes tokens automatically, and navigates the live schema by introspection.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Tristan Timblin",
+    "url": "https://github.com/tatimblin"
+  },
+  "homepage": "https://github.com/tatimblin/skills/tree/main/skills/volo-sports",
+  "repository": "https://github.com/tatimblin/skills",
+  "license": "MIT",
+  "keywords": ["volo", "volosports", "sports", "league", "schedule", "graphql", "calendar", "hasura"]
+}

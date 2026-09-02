@@ -12,7 +12,7 @@ Via the [`skills`](https://skills.sh) CLI, into whichever agents you pick:
 
 ```bash
 npx skills add tatimblin/skills                       # all of them
-npx skills add tatimblin/skills --skill eero-sonos    # just one
+npx skills add tatimblin/skills --skill volo-sports   # just one
 npx skills add tatimblin/skills --list                # see what's here first
 ```
 
@@ -21,6 +21,7 @@ Or as a Claude Code plugin, which adds version tracking and automatic updates:
 ```
 /plugin marketplace add tatimblin/skills
 /plugin install eero-sonos@tatimblin-skills
+/plugin install volo-sports@tatimblin-skills
 ```
 
 ## Skills
@@ -28,6 +29,7 @@ Or as a Claude Code plugin, which adds version tracking and automatic updates:
 | Skill | What it does |
 |---|---|
 | [`eero-sonos`](skills/eero-sonos/) | Diagnoses and fixes Sonos speakers misbehaving on an eero mesh network |
+| [`volo-sports`](skills/volo-sports/) | Pulls your Volo Sports leagues, schedule and results out of their undocumented API |
 
 ---
 

@@ -30,7 +30,7 @@ before the first command:
 SKILL_DIR=/absolute/path/to/eero-sonos     # the directory containing this SKILL.md
 ```
 
-As a Claude Code plugin, that is `"$CLAUDE_PLUGIN_ROOT/skills/eero-sonos"`. Bare relative
+As a Claude Code plugin, that is `"$CLAUDE_PLUGIN_ROOT"`. Bare relative
 paths work only if the shell is already in the skill directory - don't rely on it.
 
 ## Workflow
