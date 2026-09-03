@@ -1,0 +1,13 @@
+{
+  "name": "local-routine",
+  "description": "A local scheduler for Claude Code. Register a prompt against a cron expression and it surfaces in the next session after it comes due, running on your machine with access to your files and credentials.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Tristan Timblin",
+    "url": "https://github.com/tatimblin"
+  },
+  "homepage": "https://github.com/tatimblin/skills/tree/main/skills/local-routine",
+  "repository": "https://github.com/tatimblin/skills",
+  "license": "MIT",
+  "keywords": ["cron", "schedule", "routine", "reminder", "hooks", "automation", "local"]
+}

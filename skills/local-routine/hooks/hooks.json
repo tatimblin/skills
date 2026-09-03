@@ -1,0 +1,17 @@
+{
+  "description": "Surface local routines that have come due",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/local_routine.py\" check",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
