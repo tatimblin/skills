@@ -23,6 +23,7 @@ Or as a Claude Code plugin, which adds version tracking and automatic updates:
 /plugin install eero-sonos@tatimblin-skills
 /plugin install volo-sports@tatimblin-skills
 /plugin install local-routine@tatimblin-skills
+/plugin install refresh-calendar@tatimblin-skills
 ```
 
 ## Skills
@@ -32,6 +33,7 @@ Or as a Claude Code plugin, which adds version tracking and automatic updates:
 | [`eero-sonos`](skills/eero-sonos/) | Diagnoses and fixes Sonos speakers misbehaving on an eero mesh network |
 | [`volo-sports`](skills/volo-sports/) | Pulls your Volo Sports leagues, schedule and results out of their undocumented API |
 | [`local-routine`](skills/local-routine/) | Runs a prompt on a cron schedule, surfacing it in your next session once it comes due |
+| [`refresh-calendar`](skills/refresh-calendar/) | Spots a calendar series that will need renewing and schedules a local routine for after it ends |
 
 ---
 

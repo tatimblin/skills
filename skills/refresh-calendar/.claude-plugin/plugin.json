@@ -1,0 +1,13 @@
+{
+  "name": "refresh-calendar",
+  "description": "Detects a calendar series whose next occurrence cannot be known until the scheduled ones elapse - a semester of classes, a league season, a dentist appointment - and registers a local routine to pick up the next one after it ends.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Tristan Timblin",
+    "url": "https://github.com/tatimblin"
+  },
+  "homepage": "https://github.com/tatimblin/skills/tree/main/skills/refresh-calendar",
+  "repository": "https://github.com/tatimblin/skills",
+  "license": "MIT",
+  "keywords": ["calendar", "schedule", "recurring", "reminder", "semester", "season", "automation"]
+}

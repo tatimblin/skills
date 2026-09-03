@@ -10,35 +10,25 @@
       "name": "eero-sonos",
       "source": "./skills/eero-sonos",
       "category": "networking",
-      "tags": [
-        "sonos",
-        "eero",
-        "networking",
-        "diagnostics"
-      ]
+      "tags": ["sonos", "eero", "networking", "diagnostics"]
     },
     {
       "name": "volo-sports",
       "source": "./skills/volo-sports",
       "category": "productivity",
-      "tags": [
-        "volo",
-        "sports",
-        "schedule",
-        "graphql",
-        "calendar"
-      ]
+      "tags": ["volo", "sports", "schedule", "graphql", "calendar"]
     },
     {
       "name": "local-routine",
       "source": "./skills/local-routine",
       "category": "productivity",
-      "tags": [
-        "cron",
-        "schedule",
-        "hooks",
-        "automation"
-      ]
+      "tags": ["cron", "schedule", "hooks", "automation"]
+    },
+    {
+      "name": "refresh-calendar",
+      "source": "./skills/refresh-calendar",
+      "category": "productivity",
+      "tags": ["calendar", "schedule", "recurring", "automation"]
     }
   ]
 }
