@@ -26,6 +26,16 @@ Or as a Claude Code plugin, which adds version tracking and automatic updates:
 /plugin install refresh-calendar@tatimblin-skills
 ```
 
+**`local-routine` needs the plugin install to actually fire.** It ships a
+`SessionStart` hook that surfaces due routines, and only the plugin rail
+registers hooks automatically. The `npx skills add` rail copies its files —
+the skill loads and is usable, but nothing it schedules will ever surface
+until a hook is wired up by hand; see
+[`skills/local-routine/references/hooks.md`](skills/local-routine/references/hooks.md)
+for the manual `settings.json` entry if you install this way. This applies
+only to `local-routine`; `refresh-calendar` depends on it for scheduling but
+has no hook of its own, and the other skills here need no hook at all.
+
 ## Skills
 
 | Skill | What it does |
