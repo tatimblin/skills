@@ -1,0 +1,13 @@
+{
+  "name": "ea-email",
+  "description": "The email domain for the executive-assistant skill: triages unsorted Gmail mail by the user's playbook, hands bookings to the assistant's ledger, collects correction signals, and proposes Gmail filters for rules that have proven stable.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Tristan Timblin",
+    "url": "https://github.com/tatimblin"
+  },
+  "homepage": "https://github.com/tatimblin/skills/tree/main/skills/ea-email",
+  "repository": "https://github.com/tatimblin/skills",
+  "license": "MIT",
+  "keywords": ["email", "gmail", "triage", "filters", "assistant", "automation"]
+}
