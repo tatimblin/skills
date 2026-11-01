@@ -1,6 +1,6 @@
 ---
 name: ea-calendar
-description: The calendar domain for the executive-assistant skill - turns booking and appointment confirmations into calendar events without duplicates, keeps the assistant's upcoming ledger in step with the calendar, and seeds that ledger from the existing calendar on first setup. Returns proposed actions rather than acting on its own. Use when the executive-assistant run reaches its domains step, when ea-email hands over a ledger candidate, or when the user asks to import their calendar into the assistant's ledger.
+description: The calendar domain for the executive-assistant skill - turns booking and appointment confirmations into calendar events without duplicates, keeps the assistant's upcoming ledger in step with the calendar, and seeds that ledger from the existing calendar and mail on first setup. Returns proposed actions rather than acting on its own. Use when the executive-assistant run reaches its domains step, when ea-email hands over a ledger candidate, or when the user asks to import their calendar into the assistant's ledger.
 ---
 
 # Calendar domain
@@ -87,9 +87,11 @@ its kind and next rung from `ladders.md`.
 
 ## First-time import
 
-When the user asks to set up or import, seed the ledger from the calendar instead of
-waiting for new confirmations. Follow `references/import.md`: it reads the next 90 days,
-classifies each event, and proposes rows in one batch for the user to confirm.
+When the user asks to set up or import, seed the ledger instead of waiting for new
+confirmations. Follow `references/import.md`: it reads the next 12 months of the calendar
+*and* the last 12 months of mail, because many commitments - an appointment booked at the
+last visit - exist only as an email. It proposes rows in one batch for the user to confirm
+and offers to add mail-only commitments to the calendar.
 
 ## References
 
