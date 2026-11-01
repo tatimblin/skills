@@ -27,6 +27,7 @@ Or as a Claude Code plugin, which adds version tracking and automatic updates:
 /plugin install executive-assistant@tatimblin-skills
 /plugin install ea-email@tatimblin-skills
 /plugin install ea-calendar@tatimblin-skills
+/plugin install ea-chef@tatimblin-skills
 ```
 
 **`local-routine` needs the plugin install to actually fire.** It ships a
@@ -50,6 +51,7 @@ has no hook of its own, and the other skills here need no hook at all.
 | [`executive-assistant`](skills/executive-assistant/) | Files mail, turns confirmations into calendar events, tells you about commitments when they matter, and learns from your corrections in a private git repo |
 | [`ea-email`](skills/ea-email/) | The email domain for `executive-assistant`: triages unsorted Gmail by your playbook and proposes filters for rules that have proven stable |
 | [`ea-calendar`](skills/ea-calendar/) | The calendar domain for `executive-assistant`: turns confirmations into events without duplicates and keeps the reminder ledger in step with your calendar |
+| [`ea-chef`](skills/ea-chef/) | The meal-planning advisor for `executive-assistant`: saves recipes, turns a week of meals into a plan and a combined shopping list, and reminds you what's for dinner |
 
 ---
 
