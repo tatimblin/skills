@@ -118,7 +118,8 @@ day it is three lines.
 ### 8. Log and commit
 
 Append the run to `log/YYYY-MM-DD.md`: start time, actions with links, proposals, rules
-learned, errors. Commit the ledger, `today.md` and the log together with a message that says what the run
+learned, errors. Rewrite `inbox.json`, the snapshot of what is still in the inbox, so the next run can see
+what the user did with it (ea-email `references/signals.md`). Commit the ledger, `today.md`, the snapshot and the log together with a message that says what the run
 did. Pull with rebase and push. End with a one-line status, not the brief.
 
 ## References
