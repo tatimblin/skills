@@ -24,6 +24,8 @@ Or as a Claude Code plugin, which adds version tracking and automatic updates:
 /plugin install volo-sports@tatimblin-skills
 /plugin install local-routine@tatimblin-skills
 /plugin install refresh-calendar@tatimblin-skills
+/plugin install executive-assistant@tatimblin-skills
+/plugin install ea-email@tatimblin-skills
 ```
 
 **`local-routine` needs the plugin install to actually fire.** It ships a
@@ -44,6 +46,8 @@ has no hook of its own, and the other skills here need no hook at all.
 | [`volo-sports`](skills/volo-sports/) | Pulls your Volo Sports leagues, schedule and results out of their undocumented API |
 | [`local-routine`](skills/local-routine/) | Runs a prompt on a cron schedule, surfacing it in your next session once it comes due |
 | [`refresh-calendar`](skills/refresh-calendar/) | Spots a calendar series that will need renewing and schedules a local routine for after it ends |
+| [`executive-assistant`](skills/executive-assistant/) | Files mail, turns confirmations into calendar events, tells you about commitments when they matter, and learns from your corrections in a private git repo |
+| [`ea-email`](skills/ea-email/) | The email domain for `executive-assistant`: triages unsorted Gmail by your playbook and proposes filters for rules that have proven stable |
 
 ---
 
