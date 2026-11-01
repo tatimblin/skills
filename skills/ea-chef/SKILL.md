@@ -72,7 +72,8 @@ The user says what they're eating, in any order and any words. See
      chili salmon-rice tacos --staples <state>/recipes/README.md
    ```
 
-   Use `name:2` for a recipe cooked twice. Review `unparsed` in the output and fix those
+   Use `name:2` for a recipe cooked twice. If a planned recipe has an `## Optional`
+   section, ask once per recipe ("tomato this time?") and add any yeses to the list by hand. Review `unparsed` in the output and fix those
    lines in the recipe notes.
 6. Write `plans/YYYY-Www.md` (ISO week) with the nights and the list, per
    `references/planning.md`.

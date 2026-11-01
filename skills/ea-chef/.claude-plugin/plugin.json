@@ -1,7 +1,7 @@
 {
   "name": "ea-chef",
   "description": "The meal-planning advisor for the executive-assistant skill: saves recipes with their ingredients, turns a week of meals described in plain words into a dated plan and a combined shopping list grouped by store section, and hands each meal to the assistant's ledger for dinner and prep reminders.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Tristan Timblin",
     "url": "https://github.com/tatimblin"

@@ -24,6 +24,9 @@ tags: [weeknight]        # optional
 - 1/2 cup sour cream — Dairy
 - salt — Pantry
 
+## Optional
+- 1 tomato — Produce
+
 ## Steps
 1. Brown the beef with the onion.
 2. ...
@@ -45,6 +48,12 @@ Anything the user said about it ("double the beans", "good with cornbread").
 
 Keep the item names consistent across recipes ("onion" everywhere, not "yellow onion" in
 one and "onion" in another) so the list combines them.
+
+## Optional ingredients
+
+Things the user adds only sometimes go under `## Optional`, in the same line format. The
+script reads only `## Ingredients`, so optional items stay off the list unless the user
+asks for them that week.
 
 ## Store sections
 
