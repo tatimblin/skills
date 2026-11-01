@@ -1,6 +1,6 @@
 ---
 name: executive-assistant
-description: Run one pass of a personal executive assistant that files mail, turns confirmations into calendar events, decides what is worth the user's attention today, and learns from their corrections. Its knowledge lives in a private state folder (a git repo of Markdown) that it reads at the start of every run and writes back to; this skill holds only the method. Use when a scheduled task or the user asks to run the assistant, produce the morning brief, process what came in since the last run, or apply corrections to the assistant's playbook; also use to set up a new state folder.
+description: Run a personal executive assistant that files mail, turns confirmations into calendar events, decides what is worth the user's attention today, and learns from their corrections. Its knowledge lives in a private state folder (a git repo of Markdown) that it reads at the start of every run and writes back to; this skill holds only the method. Has two modes: process (a background pass, usually scheduled) and brief (answering when the user asks what they need to know). Use when a scheduled task runs the assistant, when the user asks for their brief or what's going on today, when asked to process what came in or apply corrections to the playbook, or to set up a new state folder.
 ---
 
 # Executive assistant
@@ -49,9 +49,20 @@ If none exists, stop and say so - do not create one during an unattended run.
 To create a new one when the user asks interactively, follow
 `references/state-layout.md`; it lists every file and its format.
 
-## Workflow
+## Modes
 
-Every run follows the same eight steps. Keep a working list of actions as you go; the
+| Mode | When | What it does | Output |
+|---|---|---|---|
+| **Process** | A scheduled run, or "process my mail" | Steps 1-8 below: learn, triage, act, update the ledger, rewrite `today.md`, log | A one-line status. The brief is written to `today.md`, not announced |
+| **Brief** | The user asks: "what's my brief?", "anything I need to know?", "what's on today?" | Pull the state and read `today.md`. If it was written before today, or more than 4 hours ago, run process first. Then answer | The brief itself, per `references/brief.md` |
+
+The brief is pulled, not pushed. Process runs stay quiet - no notification, no message
+unless something under "Needs you" is genuinely urgent (a security alert, a same-day
+deadline), and even then one line.
+
+## Workflow (process mode)
+
+Every process run follows the same eight steps. Keep a working list of actions as you go; the
 log and the brief are both written from it.
 
 ### 1. Sync and load
@@ -100,13 +111,15 @@ duplicate - match on date plus venue or title first.
 ### 7. Write the brief
 
 Build it from ledger rungs due today, "Needs you" items, and the action list, per
-`references/brief.md`. On a quiet day it is three lines.
+`references/brief.md`, and overwrite `today.md` at the root of the state with it. Put the
+time it was written on the first line so brief mode can tell whether it's fresh. On a quiet
+day it is three lines.
 
 ### 8. Log and commit
 
 Append the run to `log/YYYY-MM-DD.md`: start time, actions with links, proposals, rules
-learned, errors. Commit the ledger and log together with a message that says what the run
-did. Pull with rebase and push. Then output the brief as the run's final message.
+learned, errors. Commit the ledger, `today.md` and the log together with a message that says what the run
+did. Pull with rebase and push. End with a one-line status, not the brief.
 
 ## References
 

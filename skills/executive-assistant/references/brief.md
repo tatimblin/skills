@@ -1,6 +1,7 @@
 # The brief
 
-The brief answers one question: **what does the user need to know today?** Not "what
+The brief lives in `today.md` in the state, rewritten by every process run, and is read
+out when the user asks for it. It answers one question: **what does the user need to know today?** Not "what
 arrived" and not "what the assistant did".
 
 ## Timing comes from ladders

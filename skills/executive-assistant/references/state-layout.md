@@ -10,6 +10,7 @@ README.md            What this is and how to correct the assistant
 core.md              Phase, autonomy overrides, brief preferences, global rules
 ladders.md           Reminder rungs per kind of commitment
 upcoming.md          Ledger of future commitments
+today.md             The current brief, rewritten by every process run
 people.md            Who matters and why
 graduated.md         Judgments now handled by deterministic rules
 examples.jsonl       Labeled cases from corrections (the regression set)
