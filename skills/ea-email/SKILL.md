@@ -68,6 +68,14 @@ thread:
 
 Mark `needs_you` for anything wanting a reply or a decision, with the specific ask.
 
+### 4b. Collapse bursts
+
+Before returning per-thread entries, group account and security mail that arrived in a
+burst - three or more messages from one service within two hours - into a single entry,
+with outliers (new locations, password or recovery changes, failed sign-ins) pulled out
+and flagged on their own. Security mail is never filed without the user's confirmation;
+one confirmation clears the whole burst. See `references/bursts.md`.
+
 ### 5. Hand off commitments
 
 A booking, ticket, reservation, appointment, flight, bill due date or renewal becomes a
@@ -96,6 +104,7 @@ add a "Needs you" proposal to import it. Never create the filter yourself.
 | `references/gmail.md` | Search queries, views, label handling, links |
 | `references/signals.md` | How to find each correction signal |
 | `references/graduation.md` | The Gmail filter XML format and when a rule qualifies |
+| `references/bursts.md` | Collapsing bursts of account and security mail, and spotting outliers |
 
 ## Interpreting results
 
