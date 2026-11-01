@@ -45,6 +45,9 @@ These go to the run loop's learning step before any triage. See
 - Threads labeled `EA/Wrong` or `EA/Good` since the last run.
 - Threads the last run's log says were filed out of the inbox that are back in it now.
 - Threads the last brief flagged that the user archived without acting, within a day.
+- What the user did with mail the assistant left in the inbox: diff the state's
+  `inbox.json` snapshot against Gmail now - archived (read or unread), trashed, starred,
+  replied, labeled. Rule out the assistant's own filing and the expiry script first.
 
 Return each as a signal with the thread link, what the assistant did, and what the user
 did. Once the loop has learned from a marker, remove the `EA/*` label.

@@ -1,7 +1,7 @@
 {
   "name": "executive-assistant",
   "description": "A personal executive assistant that files mail, turns confirmations into calendar events, surfaces commitments when they matter rather than when they arrive, and learns from corrections stored in a private git repo of Markdown.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "Tristan Timblin",
     "url": "https://github.com/tatimblin"
@@ -9,5 +9,13 @@
   "homepage": "https://github.com/tatimblin/skills/tree/main/skills/executive-assistant",
   "repository": "https://github.com/tatimblin/skills",
   "license": "MIT",
-  "keywords": ["assistant", "email", "calendar", "brief", "reminders", "automation", "memory"]
+  "keywords": [
+    "assistant",
+    "email",
+    "calendar",
+    "brief",
+    "reminders",
+    "automation",
+    "memory"
+  ]
 }
