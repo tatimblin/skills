@@ -1,0 +1,13 @@
+{
+  "name": "ea-calendar",
+  "description": "The calendar domain for the executive-assistant skill: turns booking confirmations into calendar events without duplicates, keeps the assistant's upcoming ledger in step with the calendar, and seeds the ledger from the existing calendar on setup.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Tristan Timblin",
+    "url": "https://github.com/tatimblin"
+  },
+  "homepage": "https://github.com/tatimblin/skills/tree/main/skills/ea-calendar",
+  "repository": "https://github.com/tatimblin/skills",
+  "license": "MIT",
+  "keywords": ["calendar", "reservations", "appointments", "reminders", "assistant", "automation"]
+}
