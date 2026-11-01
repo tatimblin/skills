@@ -86,6 +86,17 @@
         "appointments",
         "assistant"
       ]
+    },
+    {
+      "name": "ea-chef",
+      "source": "./skills/ea-chef",
+      "category": "productivity",
+      "tags": [
+        "recipes",
+        "meal-planning",
+        "grocery",
+        "assistant"
+      ]
     }
   ]
 }
