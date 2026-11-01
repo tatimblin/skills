@@ -12,7 +12,8 @@ Wednesday, salmon Thursday." Turn that into one entry per night they mentioned:
 | "Out", "eating out", a restaurant name | Out - nothing to buy |
 | Nothing for a night | Leave the night off; don't fill it |
 
-Only cooked meals add to the shopping list. If the user plans leftovers but the recipe
+Only cooked meals add to the shopping list, and only for what isn't already on hand in
+`kitchen.md` - a meal can be fully stocked, or need just one or two things. If the user plans leftovers but the recipe
 isn't marked `leftovers: true` and serves fewer than four, mention that it may not stretch.
 
 ## The plan file
