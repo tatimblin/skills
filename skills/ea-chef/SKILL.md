@@ -16,8 +16,8 @@ state folder and hands items to the ledger.
 
 ## Ground rules
 
-- **Recipes and plans live in the state folder**, not in this skill: `recipes/` and
-  `plans/`. Pull before writing and commit each change, per the state's `CLAUDE.md`.
+- **Recipes, plans and what's on hand live in the state folder**, not in this skill:
+  `recipes/`, `plans/` and `kitchen.md`. Pull before writing and commit each change, per the state's `CLAUDE.md`.
 - **The user's recipe wins.** Save what they gave you. Normalize the format, never
   "improve" the recipe, swap ingredients or rescale it unasked.
 - **Ask, don't guess, about a missing recipe.** If a planned meal has no recipe note, ask
@@ -65,7 +65,10 @@ The user says what they're eating, in any order and any words. See
    `leftovers: true` when they say so ("leftovers Tuesday") - never silently.
 4. Check the calendar for those evenings. Mention a conflict ("you have softball
    Tuesday at 8"), don't resolve it.
-5. Build the list:
+5. Check what's on hand in the state's `kitchen.md` (cooked leftovers, meals whose
+   ingredients are already bought, partial sets). Plan those first - cooked food and fresh
+   fish or pasta before pantry meals - and leave on-hand items off the list.
+6. Build the list:
 
    ```bash
    python3 "$SKILL_DIR"/scripts/shopping_list.py --recipes-dir <state>/recipes \
@@ -77,11 +80,17 @@ The user says what they're eating, in any order and any words. See
    For each `## Choose one: <name>` section, ask which option this week ("which veggie with
    the salmon?") and add it the same way. Ask all of a week's questions in one message. Review `unparsed` in the output and fix those
    lines in the recipe notes.
-6. Write `plans/YYYY-Www.md` (ISO week) with the nights and the list, per
+7. Write `plans/YYYY-Www.md` (ISO week) with the nights and the list, per
    `references/planning.md`.
-7. Hand meals to the ledger: one row per cooked meal, kind "Planned meal", with the prep
+8. Hand meals to the ledger: one row per cooked meal, kind "Planned meal", with the prep
    note when the recipe has one.
-8. Show the plan and the list in the reply, list grouped by section, ready to copy.
+9. Show the plan and the list in the reply, list grouped by section, ready to copy.
+
+### Update what's on hand
+
+When the user says what they already have ("two servings of chili left", "we have the
+salmon stuff"), record it in `kitchen.md`: what, how many dinners it covers, since when,
+and anything still missing. When a planned meal's night passes, remove what it used.
 
 ### What's for dinner
 
