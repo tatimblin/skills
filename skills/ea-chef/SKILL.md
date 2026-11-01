@@ -73,7 +73,9 @@ The user says what they're eating, in any order and any words. See
    ```
 
    Use `name:2` for a recipe cooked twice. If a planned recipe has an `## Optional`
-   section, ask once per recipe ("tomato this time?") and add any yeses to the list by hand. Review `unparsed` in the output and fix those
+   section, ask once per recipe ("tomato this time?") and add any yeses to the list by hand.
+   For each `## Choose one: <name>` section, ask which option this week ("which veggie with
+   the salmon?") and add it the same way. Ask all of a week's questions in one message. Review `unparsed` in the output and fix those
    lines in the recipe notes.
 6. Write `plans/YYYY-Www.md` (ISO week) with the nights and the list, per
    `references/planning.md`.
