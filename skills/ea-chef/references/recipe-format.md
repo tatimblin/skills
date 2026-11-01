@@ -55,6 +55,20 @@ Things the user adds only sometimes go under `## Optional`, in the same line for
 script reads only `## Ingredients`, so optional items stay off the list unless the user
 asks for them that week.
 
+## Choices
+
+When a recipe takes one of several options each time (a grain, a side vegetable), list
+them under a heading per choice:
+
+```markdown
+## Choose one: veggie
+- 1 bunch asparagus — Produce
+- 1 bag broccoli — Produce
+```
+
+Like Optional, the script ignores these sections. When planning, the chef asks which
+option this week and adds it to the list.
+
 ## Store sections
 
 Produce · Meat · Seafood · Dairy · Cheese · Bakery · Frozen · Canned · Pantry · Snacks ·
